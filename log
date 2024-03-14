@@ -579,3 +579,22 @@ Thu 14 Mar 2024 09:48:45 PM UTC:
  tests:  0|4
 total_score: 30/70
 e75ccdb
+Thu 14 Mar 2024 09:49:43 PM UTC: 
+ exercises.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:75:3: error: expected ‘,’ or ‘;’ before ‘for’
+   75 |   for( ; i < size1 ; i++){
+      |   ^~~
+exercises.c:75:12: error: statement with no effect [-Werror=unused-value]
+   75 |   for( ; i < size1 ; i++){
+      |          ~~^~~~~~~
+exercises.c:75:25: error: expected ‘;’ before ‘)’ token
+   75 |   for( ; i < size1 ; i++){
+      |                         ^
+      |                         ;
+exercises.c:75:25: error: expected statement before ‘)’ token
+cc1: all warnings being treated as errors
+Compilation failed
+572e55e
