@@ -506,3 +506,15 @@ exercises.c:48:15: error: array subscript is not an integer
       |               ^
 Compilation failed
 8693f96
+Thu 14 Mar 2024 03:18:27 PM UTC: 
+ exercises.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:44:3: error: ‘newS’ undeclared (first use in this function); did you mean ‘newSize’?
+   44 |   newS = 0;
+      |   ^~~~
+      |   newSize
+exercises.c:44:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+c39bd3a
