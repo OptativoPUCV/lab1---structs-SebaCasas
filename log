@@ -557,3 +557,13 @@ Thu 14 Mar 2024 09:46:55 PM UTC:
  tests:  0|4
 total_score: 30/70
 e1fb7df
+Thu 14 Mar 2024 09:47:39 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:80:18: error: expected expression before ‘]’ token
+   80 |   ordenar(result[], (size1 + size2));
+      |                  ^
+Compilation failed
+92dfb76
