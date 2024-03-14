@@ -41,12 +41,12 @@ newsize apunta a una dirección válida que no ha sido inicializada con nigún v
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) {
   
-  int *arrPares[size];
+  int arrPares[size];
   newSize = 0;
   
   for ( int i = 0 ; i < size; i++){
     if(arr[i] % 2 == 0){
-      arrPares[(*newSize)] = arr[i];
+      arrPares[newSize] = arr[i];
       newSize++;}
   }
   return *arrPares; 
