@@ -210,3 +210,16 @@ Thu 14 Mar 2024 02:55:31 PM UTC:
  tests:  0|5
 total_score: 20/70
 10f0b3c
+Thu 14 Mar 2024 02:55:46 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:31:24: error: expected ‘;’ before ‘}’ token
+   31 |     arr[k] = tempArr[k]
+      |                        ^
+      |                        ;
+   32 | }
+      | ~                       
+Compilation failed
+6de3117
