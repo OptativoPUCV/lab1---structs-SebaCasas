@@ -95,11 +95,9 @@ int checkSorted(int arr[], int size) {
   for(int i = 0 ; i < size - 1 ; i++){
     if(arr[i] <= arr[i+1])
       ascendente++;
-    else if(arr[i] >= arr[i+1])
+    if(arr[i] >= arr[i+1])
       descendente++;
   }
-  printf("%d\n", ascendente);
-  printf("%d\n", descendente);
   if(ascendente == size - 1)
     return 1;
   else if(descendente == size - 1)
