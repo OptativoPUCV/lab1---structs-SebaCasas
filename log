@@ -470,3 +470,24 @@ exercises.c:51:10: error: function returns address of local variable [-Werror=re
 cc1: all warnings being treated as errors
 Compilation failed
 485c3c0
+Thu 14 Mar 2024 03:16:33 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:43:8: error: array size missing in ‘arrPares’
+   43 |   int *arrPares[];
+      |        ^~~~~~~~
+exercises.c:44:12: error: assignment to expression with array type
+   44 |   arrPares = malloc(sizeof(int) * size);
+      |            ^
+exercises.c:49:28: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   49 |       arrPares[(*newSize)] = arr[i];
+      |                            ^
+exercises.c:52:10: error: returning ‘int **’ from a function with incompatible return type ‘int *’ [-Werror=incompatible-pointer-types]
+   52 |   return arrPares;
+      |          ^~~~~~~~
+exercises.c:52:10: error: function returns address of local variable [-Werror=return-local-addr]
+cc1: all warnings being treated as errors
+Compilation failed
+2a068a8
