@@ -402,3 +402,15 @@ exercises.c:52:11: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 d642a09
+Thu 14 Mar 2024 03:06:40 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:52:10: error: returning ‘int (*)[size]’ from a function with incompatible return type ‘int *’ [-Werror=incompatible-pointer-types]
+   52 |   return &arrPares;
+      |          ^~~~~~~~~
+exercises.c:52:10: error: function returns address of local variable [-Werror=return-local-addr]
+cc1: all warnings being treated as errors
+Compilation failed
+2dd40aa
