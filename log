@@ -355,3 +355,14 @@ exercises.c:52:10: error: ‘*arrPares[0]’ may be used uninitialized [-Werror=
 cc1: all warnings being treated as errors
 Compilation failed
 3c3db72
+Thu 14 Mar 2024 03:04:26 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:49:28: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   49 |       arrPares[(*newSize)] = arr[i];
+      |                            ^
+cc1: all warnings being treated as errors
+Compilation failed
+522b1d4
