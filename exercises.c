@@ -23,7 +23,7 @@ invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) {
   int tempArr[size];
-  tempArr = malloc(sizeof(int) * size);
+
   for (int i = 0 ; i < size ; i++){
     tempArr[i] = arr[size-i-1];
   }
