@@ -34,3 +34,22 @@ exercises.c:16:17: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 d6c5f51
+Thu 14 Mar 2024 02:41:34 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:13:14: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before numeric constant
+   13 |   int maxNum 0;
+      |              ^
+exercises.c:13:14: error: statement with no effect [-Werror=unused-value]
+exercises.c:15:17: error: ‘maxNum’ undeclared (first use in this function)
+   15 |     if(arr[i] > maxNum) maxNum = arr[i];
+      |                 ^~~~~~
+exercises.c:15:17: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:16:17: error: control reaches end of non-void function [-Werror=return-type]
+   16 |   return maxNum;}
+      |                 ^
+cc1: all warnings being treated as errors
+Compilation failed
+a245a93
