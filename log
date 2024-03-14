@@ -535,3 +535,13 @@ Thu 14 Mar 2024 03:18:53 PM UTC:
  tests:  0|4
 total_score: 30/70
 3a009d3
+Thu 14 Mar 2024 09:45:30 PM UTC: 
+ exercises.c | 23 +++++++++++++++++++++--
+ 1 file changed, 21 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:80:10: error: void value not ignored as it ought to be
+   80 |   result = ordenar(tempArr, (size1 + size2));
+      |          ^
+Compilation failed
+00d2a66
