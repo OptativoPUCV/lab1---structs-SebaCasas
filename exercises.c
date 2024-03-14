@@ -71,11 +71,14 @@ void ordenar(int *arreglo, int n) {
 }
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {
   //int tempArr[size1 + size2];
+  int k = 0;
   for( int i = 0 ;i < size1 ; i++){
-    result[i] = arr1[i];
+    result[k] = arr1[i];
+    k++;
   }
   for(int i = size1 ; i < (size1 + size2) ; i++){
-    result[i] = arr2[i];
+    result[k] = arr2[i];
+    k++;
   }
   //ordenar(result, (size1 + size2));
 }
