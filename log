@@ -150,3 +150,20 @@ exercises.c:25:8: error: variable ‘tempArr’ set but not used [-Werror=unused
 cc1: all warnings being treated as errors
 Compilation failed
 f5d98df
+Thu 14 Mar 2024 02:51:04 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:26:11: error: assignment to expression with array type
+   26 |   tempArr = malloc(sizeof(int) * size);
+      |           ^
+exercises.c:30:7: error: expected expression before ‘]’ token
+   30 |   arr[] = tempArr[];
+      |       ^
+exercises.c:25:7: error: variable ‘tempArr’ set but not used [-Werror=unused-but-set-variable]
+   25 |   int tempArr[size];
+      |       ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7b3b7fa
