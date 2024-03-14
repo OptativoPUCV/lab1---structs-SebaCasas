@@ -98,7 +98,7 @@ int checkSorted(int arr[], int size) {
     else if(arr[i] >= arr[i+1])
       descendente++;
   }
-  printf("%d", ascendente);
+  //printf("%d", ascendente);
   if(ascendente == size - 1)
     return 1;
   else if(descendente == size - 1)
