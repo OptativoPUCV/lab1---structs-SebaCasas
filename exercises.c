@@ -22,14 +22,13 @@ Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) {
+  
   int tempArr[size];
 
-  for (int i = 0 ; i < size ; i++){
+  for (int i = 0 ; i < size ; i++)
     tempArr[i] = arr[size-i-1];
-  }
-  for (int k = 0 ; k < size ; k++){
+  for (int k = 0 ; k < size ; k++)
     arr[k] = tempArr[k];
-  }
 }
 
 /*
