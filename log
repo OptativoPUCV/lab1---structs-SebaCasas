@@ -84,3 +84,26 @@ exercises.c:25:8: error: variable ‘tempArr’ set but not used [-Werror=unused
 cc1: all warnings being treated as errors
 Compilation failed
 f72e22c
+Thu 14 Mar 2024 02:49:33 PM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:25:7: error: array size missing in ‘tempArr’
+   25 |   int tempArr[];
+      |       ^~~~~~~
+exercises.c:26:20: error: implicit declaration of function ‘sizeeof’ [-Werror=implicit-function-declaration]
+   26 |   tempArr = malloc(sizeeof(int) * size);
+      |                    ^~~~~~~
+exercises.c:26:28: error: expected expression before ‘int’
+   26 |   tempArr = malloc(sizeeof(int) * size);
+      |                            ^~~
+exercises.c:30:7: error: expected expression before ‘]’ token
+   30 |   arr[] = tempArr[];
+      |       ^
+exercises.c:25:7: error: variable ‘tempArr’ set but not used [-Werror=unused-but-set-variable]
+   25 |   int tempArr[];
+      |       ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+8ef4698
