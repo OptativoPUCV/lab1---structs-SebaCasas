@@ -136,7 +136,8 @@ void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
   while(nombreAutor[i] != '\0' && i < sizeof(libro->autor.nombre) - 1)
     libro->autor.nombre[i] = nombreAutor[i];
   libro->autor.nombre[i] = '\0';*/
-
+  strcpy(libro->titulo, titulo, sizeof(libro->titulo));
+  strcpy(libro->autor.nombreAutor, nombreAutor, sizeof(libro->autor.nombreAutor));
   libro->autor.anioNacimiento = anioNacimiento;
   libro->anioPublicacion = anioPublicacion;
 }
