@@ -831,3 +831,14 @@ Fri 15 Mar 2024 12:34:03 AM UTC:
  tests:  0|1
 total_score: 60/70
 5155e24
+Fri 15 Mar 2024 12:34:33 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:174:13: error: returning ‘int’ from a function with return type ‘Nodo *’ {aka ‘struct nodo *’} makes pointer from integer without a cast [-Werror=int-conversion]
+  174 |   return arr[0]; }
+      |          ~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+12bb437
