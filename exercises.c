@@ -126,19 +126,19 @@ typedef struct {
 } Libro;
 
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor, int anioNacimiento, int anioPublicacion) {
-  int i = 0;
-  while(titulo[i] != '\0')
+  /*int i = 0;
+  while(titulo[i] != '\0' && i < sizeof(libro->titulo) - 1)
     libro->titulo[i] = titulo[i];
   
   libro->titulo[i] = '\0';
 
   i = 0;
-  while(nombreAutor[i] != '\0')
-    libro->autor->nombre[i] = nombreAutor[i];
-  libro->autor->nombre[i] = '\0';
+  while(nombreAutor[i] != '\0' && i < sizeof(libro->autor.nombre) - 1)
+    libro->autor.nombre[i] = nombreAutor[i];
+  libro->autor.nombre[i] = '\0';
 
-  libro->autor->anioNacimiento = anioNacimiento;
-  libro->anioPublicacion = anioPubicacion;
+  libro->autor.anioNacimiento = anioNacimiento;
+  libro->anioPublicacion = anioPublicacion;*/
 }
 
 /*

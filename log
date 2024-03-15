@@ -697,3 +697,24 @@ exercises.c:141:28: error: ‘anioPubicacion’ undeclared (first use in this fu
 exercises.c:141:28: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 15bd1b4
+Fri 15 Mar 2024 12:09:10 AM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+Fri 15 Mar 2024 12:09:41 AM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+Fri 15 Mar 2024 12:10:23 AM UTC: 
+ exercises.c | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+Fri 15 Mar 2024 12:11:47 AM UTC: 
+ exercises.c | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+Fri 15 Mar 2024 12:14:22 AM UTC: 
+ exercises.c | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+Fri 15 Mar 2024 12:15:55 AM UTC: 
+ exercises.c | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+ tests:  0|2
+total_score: 50/70
+bfc7bc0
