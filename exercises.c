@@ -125,8 +125,21 @@ typedef struct {
   int anioPublicacion;
 } Libro;
 
-void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
-                      int anioNacimiento, int anioPublicacion) {}
+void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor, int anioNacimiento, int anioPublicacion) {
+  int i = 0;
+  while(titulo[i] != '\0')
+    libro->titulo[i] = titulo[i];
+  
+  libro->titulo[i] = '\0';
+
+  i = 0;
+  while(nombreAutor[i] != '\0')
+    libro->autor->nombre[i] = nombreAutor[i];
+  libro->autor->nombre[i] = '\0';
+
+  libro->autor->anioNacimiento = anioNacimiento;
+  libro->anioPublicacion = anioPubicacion;
+}
 
 /*
 Ejercicio 7: Lista enlazada de números

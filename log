@@ -676,3 +676,24 @@ Thu 14 Mar 2024 10:13:07 PM UTC:
  tests:  0|2
 total_score: 50/70
 74f94f5
+Fri 15 Mar 2024 12:08:33 AM UTC: 
+ exercises.c | 17 +++++++++++++++--
+ 1 file changed, 15 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:137:17: error: invalid type argument of ‘->’ (have ‘Autor’)
+  137 |     libro->autor->nombre[i] = nombreAutor[i];
+      |                 ^~
+exercises.c:138:15: error: invalid type argument of ‘->’ (have ‘Autor’)
+  138 |   libro->autor->nombre[i] = '\0';
+      |               ^~
+exercises.c:140:15: error: invalid type argument of ‘->’ (have ‘Autor’)
+  140 |   libro->autor->anioNacimiento = anioNacimiento;
+      |               ^~
+exercises.c:141:28: error: ‘anioPubicacion’ undeclared (first use in this function); did you mean ‘anioPublicacion’?
+  141 |   libro->anioPublicacion = anioPubicacion;
+      |                            ^~~~~~~~~~~~~~
+      |                            anioPublicacion
+exercises.c:141:28: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+15bd1b4
