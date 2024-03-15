@@ -815,3 +815,13 @@ Fri 15 Mar 2024 12:21:16 AM UTC:
  tests:  0|1
 total_score: 60/70
 6af6699
+Fri 15 Mar 2024 12:33:28 AM UTC: 
+ exercises.c | 14 +++++++++++++-
+ 1 file changed, 13 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:167:9: error: ‘Nodo’ {aka ‘struct nodo’} has no member named ‘dato’
+  167 |     temp->dato = arr[i];
+      |         ^~
+Compilation failed
+5cf5d84
