@@ -135,10 +135,10 @@ void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
   i = 0;
   while(nombreAutor[i] != '\0' && i < sizeof(libro->autor.nombre) - 1)
     libro->autor.nombre[i] = nombreAutor[i];
-  libro->autor.nombre[i] = '\0';
+  libro->autor.nombre[i] = '\0';*/
 
   libro->autor.anioNacimiento = anioNacimiento;
-  libro->anioPublicacion = anioPublicacion;*/
+  libro->anioPublicacion = anioPublicacion;
 }
 
 /*
