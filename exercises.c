@@ -164,7 +164,7 @@ Nodo *crearListaEnlazada(int arr[], int size) {
   
   for(int i = 0 ; i < size ; i++){
     temp = (Nodo *)malloc(sizeof(Nodo));
-    temp->dato = arr[i];
+    temp->numero = arr[i];
     temp->siguiente = NULL;
 
     if (cabeza == NULL) cabeza = temp;
